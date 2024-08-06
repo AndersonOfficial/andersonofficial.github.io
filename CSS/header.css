@@ -1,0 +1,43 @@
+.menu-container {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  padding: 40px 20px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.menu-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.menu-lista a {
+  font-size: 1.125rem;
+  padding: 10px 20px;
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .menu-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .menu-lista a {
+    background: #f7f7f7;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-container {
+    width: 450px;
+  }
+
+  .menu-lista {
+    flex-wrap: nowrap;
+  }
+}
